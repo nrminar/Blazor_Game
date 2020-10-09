@@ -1,6 +1,5 @@
-@page "/fetchdata"
-@using Blazor.Learner.Shared
-@inject HttpClient Http
+@page "/fetchforecastdata"
+@inherits FetchForecastData
 
 <h1>Weather forecast</h1>
 
@@ -33,14 +32,4 @@ else
             }
         </tbody>
     </table>
-}
-
-@code {
-    private WeatherForecast[] forecasts;
-
-    protected override async Task OnInitializedAsync()
-    {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("/api/weatherforecast");
-    }
-
 }
