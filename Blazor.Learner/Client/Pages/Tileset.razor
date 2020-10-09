@@ -1,0 +1,20 @@
+﻿@page "/tileset"
+@inherits TilesetBase
+
+<h1>Just run map</h1>
+
+<div Model="@Background">
+    @for (int d = 0; d < Background.groundMap.Length; d++)
+    {
+        <div>
+            @for (int dd = 0; dd < Background.groundMap[d].Length; dd++)
+            {
+                <div style="background-color: rgb(110, 132, 234);
+                            height: 100px;
+                            width: 100px;
+                            display: inline-block;">
+                </div>
+            }
+        </div>
+    }
+</div>

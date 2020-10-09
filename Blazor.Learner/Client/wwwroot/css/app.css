@@ -136,6 +136,15 @@ app {
     top: 0.5rem;
 }
 
+.red-block {
+    background-color: red;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 5px;
+}
+
 @media (max-width: 767.98px) {
     .main .top-row:not(.auth) {
         display: none;
