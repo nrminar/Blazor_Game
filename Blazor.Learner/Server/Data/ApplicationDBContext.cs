@@ -15,5 +15,6 @@ namespace Blazor.Learner.Server.Data
         {
         }
         public DbSet<Developer> Developers { get; set; }
+        public DbSet<Card> Cards { get; set; }
     }
 }
